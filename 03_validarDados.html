@@ -11,10 +11,35 @@
     */
 
     //Entrada
-
+    let nome = prompt(`informe o seu nome.`)
+    let idade = Number(prompt(`informe a sua idade(de 0 até 150).`))
+    let salário = Number(prompt(`informe o seu salário.`))
+    let sexo = prompt(prompt(`informe o seu sexo (f ou m).`)).toLowerCase();
+    let estadocivil = prompt(` informe seu estado civil(s, c, v, d).`).toLowerCase();
 
     //Processamento
+    while(nome.length <= 3){
+        alert(`inválido.`)
+        nome = prompt(`informe um nome maior que 3 caracteres.`)
+    }
+    while(idade < 0 || idade > 150){
+        alert(`inválido.`)
+        idade = Number(prompt(`informe uma idade maior que 0 e menor que 150.`))
+    }
+    while(salário < 0){
+        alert(`inválido.`)
+        salário = Number(prompt(`informe um salário maior que 0.`))
+    }
+    while(sexo != "f" && sexo != "m"){
+        alert(`inválido.`)
+        sexo = prompt(`informe um sexo válido.`).toLowerCase();
+    }
+    while(estadocivil != "s" && estadocivil != "c" && estadocivil != "v" && estadocivil != "d"){
+        alert(`inválido.`)
+        estadocivil = prompt(`informe um estado civil válido.`).toLowerCase();
+    }
 
+    alert(`nome ${nome}  idade ${idade}  salário ${salário}  sexo ${sexo} estadocivil ${estadocivil}.`)
 
     //Saída
 

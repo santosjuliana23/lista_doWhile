@@ -6,9 +6,15 @@
     */
 
     //Entrada
-
+    let usuario = prompt(`informe o nome de usuário.`);
+    let senha = prompt(`informe a sua senha`)
+    while( usuario == senha){
+        alert(`invalido.`)
+        senha = prompt(`informe uma senha que não seja igual o usuário.`)
+    }
 
     //Processamento
+    alert(`${senha}`)
 
 
     //Saída

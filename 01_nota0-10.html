@@ -7,8 +7,16 @@
 
     //Entrada
 
+        let nota = Number ( prompt(`informe uma nota entre 0 e 10.`))
+    
+    while( nota < 0 || nota > 10 ){
+        alert(`valor inválido.`)
+         nota = Number ( prompt(`informe uma nota entre 0 e 10!`))
+    }
 
     //Processamento
+    alert(`${nota}`)
+    
 
 
     //Saída
